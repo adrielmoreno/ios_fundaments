@@ -27,6 +27,13 @@ class ViewController: UIViewController {
         label.text = model.greet()
     }
     
+   
+    @IBAction func onSecondButton(_ sender: Any) {
+       let nextVC = SecondViewController()
+       present(nextVC, animated: true)
+    }
+    
+    
     
     @IBAction func ageSliderIn(_ sender: UISlider) {
         model.edad = Int(sender.value)

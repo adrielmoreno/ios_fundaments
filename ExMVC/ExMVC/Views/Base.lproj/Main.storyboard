@@ -45,19 +45,39 @@
                                     <action selector="ageSliderIn:" destination="BYZ-38-t0r" eventType="valueChanged" id="STY-It-JE4"/>
                                 </connections>
                             </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ips-eQ-WLG">
+                                <rect key="frame" x="146.5" y="514" width="82" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Second"/>
+                                <connections>
+                                    <action selector="onSecondButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oz4-qs-KAP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keO-Gc-3L7">
+                                <rect key="frame" x="133" y="581" width="109" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Storyboard"/>
+                                <connections>
+                                    <segue destination="CAi-BV-mU2" kind="show" id="bk3-Yv-fEk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ips-eQ-WLG" firstAttribute="top" secondItem="8Ec-1n-jrH" secondAttribute="bottom" constant="32" id="4Sl-jp-APU"/>
                             <constraint firstItem="0CX-FO-Hur" firstAttribute="top" secondItem="0f6-DI-VdN" secondAttribute="bottom" constant="40" id="GyH-8S-Bhz"/>
                             <constraint firstItem="0CX-FO-Hur" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RYr-0w-aGH"/>
                             <constraint firstItem="2IV-ab-VqE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Soj-VI-Kwj"/>
+                            <constraint firstItem="ips-eQ-WLG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XXo-bk-tBM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Ec-1n-jrH" secondAttribute="trailing" constant="30" id="cz2-jU-BcT"/>
                             <constraint firstItem="0f6-DI-VdN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hgC-y2-pwq"/>
                             <constraint firstItem="8Ec-1n-jrH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="pQ9-co-QQy"/>
                             <constraint firstItem="0CX-FO-Hur" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qmB-Xy-Dyz"/>
                             <constraint firstItem="8Ec-1n-jrH" firstAttribute="top" secondItem="2IV-ab-VqE" secondAttribute="bottom" constant="30" id="vkt-pY-8gC"/>
                             <constraint firstItem="2IV-ab-VqE" firstAttribute="top" secondItem="0CX-FO-Hur" secondAttribute="bottom" constant="50" id="yig-Tj-T7i"/>
+                            <constraint firstItem="keO-Gc-3L7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ylY-Vt-mpc"/>
+                            <constraint firstItem="keO-Gc-3L7" firstAttribute="top" secondItem="ips-eQ-WLG" secondAttribute="bottom" constant="32" id="zNT-PL-YdE"/>
                         </constraints>
                     </view>
                     <connections>
@@ -69,6 +89,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="-28"/>
+        </scene>
+        <!--SecondStoryboard-->
+        <scene sceneID="LD0-um-Nje">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SecondStoryboard" id="CAi-BV-mU2" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="NiZ-pa-eh9"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ged-0z-wBy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="670" y="28"/>
         </scene>
     </scenes>
     <resources>
