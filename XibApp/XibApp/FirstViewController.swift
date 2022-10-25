@@ -12,18 +12,18 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.title = "PrimerView"
     }
 
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func onButtonTap(_ sender: Any) {
+        // navegar a otro view
+        let nextVC = SecondViewController()
+        // navegation a otro view
+        navigationController?.pushViewController(nextVC, animated: true)
+        // navegation sin guardar la vista anterior
+//        navigationController?.setViewControllers([nextVC], animated: true)
     }
-    */
+    
 
 }

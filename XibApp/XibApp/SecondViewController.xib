@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController" customModule="XibApp" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController" customModule="XibApp" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -18,22 +18,20 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsa-1I-xRt">
-                    <rect key="frame" x="146.5" y="316" width="82" height="35"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="Second"/>
-                    <connections>
-                        <action selector="onButtonTap:" destination="-1" eventType="touchUpInside" id="lxQ-lN-H6R"/>
-                    </connections>
-                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILd-nh-4em">
+                    <rect key="frame" x="158.5" y="323" width="58" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="dsa-1I-xRt" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="fxe-dl-Bgj"/>
-                <constraint firstItem="dsa-1I-xRt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ulf-X2-VDo"/>
+                <constraint firstItem="ILd-nh-4em" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Lgh-dR-XTb"/>
+                <constraint firstItem="ILd-nh-4em" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VCq-9j-Gz8"/>
             </constraints>
-            <point key="canvasLocation" x="83" y="-11"/>
+            <point key="canvasLocation" x="131" y="-12"/>
         </view>
     </objects>
     <resources>

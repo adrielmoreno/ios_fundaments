@@ -19,7 +19,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: scene)
         let firstVieController = FirstViewController()
         
-        window.rootViewController = firstVieController
+        // navigation. Ir al primer view controller
+        let navigationController = UINavigationController()
+        navigationController.setViewControllers([firstVieController], animated: false)
+        
+        window.rootViewController = navigationController
         window.makeKeyAndVisible()
         
         self.window = window
